@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS | 출력</title>
+  <script defer src="04-출력.js"></script>
+</head>
+<body>
+  <h1>출력</h1>
+  <h2>표시</h2>
+  <h3>console.log() : 브라우저 콘솔에 로그를 출력합니다.</h3>
+  <button onclick="printLog()">console.log() 출력</button>
+  <h3>innerHTML : HTML요소에 쓰기</h3>
+  <p id="inner">HTML요소에 접근하기 위해 document.getElementById(id) 메서드를 사용할 수 있다.</p>
+  <button onclick="changeHTML()">innerHTML 변경</button>
+  <h3>document.write() : HTML 문서에 쓰기</h3>
+  <p>테스트 목적으로 사용한다. HTML 문서가 로드 된 후 사용하면 기존 HTML이 모두 삭제된다.</p>
+  <button onclick="writeHTML()">document.write() 출력</button>
+  <h3>window.laert(): 알림 상자에 쓰기</h3>
+  <p>이때 window. 를 생략할 수 있다. JavaScript에서 window객체는 글로벌 범위 객체다. 즉, 변수나 속성 및 메서드는 기본적으로 window객체에 속한다. </p>
+  <button onclick="alertMessage()">window.alert() 출력</button>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS | Object</title>
+</head>
+<body>
+  <h1>Object</h1>
+  <p>객체는 어떠한 변수로, 동일한 속성을 갖지만 값은 다른 대상의 모임이다.</p>
+  <h2>객체 정의</h2>
+  <h3>객체 리터럴</h3>
+  <p>
+    객체 리터럴(Object Literal)은 {}를 사용하여 정의한다.
+    <br>
+    { name: 'John', age: 30, isStudent: true }
+  </p>
+  <h2>객체 생성</h2>
+  <p>변수 지정하듯 cosnt varsName = {value: key, value2: key2 ...} 로 생성할 수 있다. 이때 varsName과 뒤 객체는 동일한 메모리 주소를 공유한다.</p>
+  <h3>Object() 생성자</h3>
+  <p>
+    Object() 생성자를 사용하여 객체를 생성할 수 있다.
+    <br>
+    <pre>
+      const obj = new Object();
+      obj.name = 'John';
+      obj.age = 30;
+      obj.isStudent = true;
+    </pre>
+  </p>
+  <h3>객체 유형 생성자</h3>
+  <p>
+    <pre>
+      function objName(property1, property2, ...) {
+        this.property1 = property1;
+        this.property2 = property2;
+        //...
+      }
+
+      const obj = new objName(key1, key2, ...);
+      const obj2 = new objName(key1, key2, ...);
+      ...
+    </pre>
+  </p>
+  <p>이때 속성에 주어진 값은 모든 객체의 기본값이다. 객체 생성자(objName)에는 새 속성을 추가 할 수 없다. 추가하려면 objName.prototype,newProperty="key" 로 추가 해야한다.</p>
+  <h2>객체 속성</h2>
+  <p>객체는 속성(property)과 값(value)으로 구성된다.</p>
+  <h3>접근</h3>
+  <p>
+    객체의 속성(property)에 접근할 때, '.'(dot) 또는 '[]'(bracket) 연산자를 사용한다.
+    <br>
+    obj.name, obj['name']
+  </p>
+  <h2>객체 메서드</h2>
+  <p>
+    객체는 메서드(method)를 포함할 수 있다. 이때 메서드는 어떤 작업을 수행할 수 있는 방식이다. 메서드는 함수로 저장된다.
+    <br>
+    obj.sayHello()
+  </p>
+  <h3>메서드 접근</h3>
+  <p>
+    obj.sayHello(), obj['sayHello']()
+  </p>
+  <p>괄호 없이 접근하면 함수 정의가 반환된다</p>
+  <h3>메서드 추가</h3>
+  <p>
+    obj.sayHello = function() { console.log('Hello'); }
+  </p>
+  <h2>객체 표시</h2>
+  <h3>객체 출력</h3>
+  <p>
+    console.log(obj); // [object Object]
+  </p>
+  <h3>객체 속성 표시</h3>
+  <p>obj.property로 표시</p>
+  <h3>루프에서</h3>
+  <p>
+    for (let x in person) {
+      text += person[x] + " ";
+    }; // 각 obj의 key값 출력
+  </p>
+  <h3>Object.value</h3>
+  <p>
+    Object.values(obj).forEach(value => console.log(value)); // obj의 value값 출력
+  </p>
+  <h3>object.entries</h3>
+  <p>
+    Object.entries(obj).forEach(entry => console.log(entry)); // obj의 key-value 목록 출력
+  </p>
+  <h3>JSON.stringify()</h3>
+  <p>
+    JSON.stringify(obj); // JSON 형식으로 obj 출력
+  </p>
+</body>
+</html>

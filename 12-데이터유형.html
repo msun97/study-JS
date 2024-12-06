@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JU | 데이터 유형</title>
+</head>
+<body>
+  <h1>데이터 유형</h1>
+  <p>JavaScript는 다양한 데이터 유형(Data Type)을 지원합니다. JavaScript는 7가지 기본 데이터 유형(Primitive Types)과 1개 객체 데이터 유형(Object Type)을 제공합니다. 데이터 유형은 typeof 연산자를 통해 찾을 수 있습니다.</p>
+  <ul>
+    <li>Primitive Types: String, Number, Boolean, Null, Undefined, Symbol</li>
+    <li>Object Type: Array, Date, RegExp, Function, Error, Map, Set, WeakMap, WeakSet</li>
+  </ul>
+  <p>JavaScript는 동적 typing(변경 가능한 데이터 유형)을 지원하며, 값의 타입을 추가(type inference)할 수 있습니다.</p>
+  <h2>문자열</h2>
+  <p>문자열은 " " (쌍 따옴표)나 ' ' (작은 따옴표)로 묶어서 표현합니다. escape sequences(\)를 사용하여 escape sequence를 escape할 수 있습니다.</p>
+  <h2>숫자</h2>
+  <p>JavaScript에서 숫자(Number)에는 10진(decimal), 16진(hexadecimal), 8진(octal)으로 표현할 수 있습니다. 10진, 16진, 8진 숫자를 10진 숫자로 변환할 때, parseInt() 함수를 사용합니다.</p>
+  <h3>지수 표기법</h3>
+  <p>10진 숫자에 e(E)나 E(e)를 사용하여 10^n (n: integer)로 표현할 수 있습니다. 10진 1234567890e-5를 12.34567890e5로 표현합니다.</p>
+  <h3>BigInt</h3>
+  <p>BigInt(n) 함수를 사용하여 2^53 이하의 64비트 정수(integer)를 생성할 수 있습니다. 12345678901234567890n를 12345678901234567890n로 표현합니다.</p>
+  <h2>불리언</h2>
+  <p>true, false로 true/false를 표현합니다.</p>
+  <h2>배열</h2>
+  <p>배열(Array)은 [] (대괄호)로 묶어서 표현합니다. Array.prototype.push(), Array.prototype.pop(), Array.prototype.shift(), Array.prototype.unshift(), Array.prototype.splice(), Array.prototype.slice() 등의 메서드를 사용하여 배열을 수정합니다.</p>
+  <h2>객체</h2>
+  <p>JavaScript의 객체(Object)는 {} (중괄호)로 묶어서 표현합니다. 객체 속성은 쉼표로 구분된 이름:값 쌍으로 작성됩니다.</p>
+  <h2>undefined</h2>
+  <p>변수가 선언되었지만, 초기화(할당)되지 않은 상태일 때, undefined 값을 갖습니다.</p>
+</body>
+</html>

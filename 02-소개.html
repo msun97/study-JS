@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS | 소개</title>
+  <script defer src="02-소개.js"></script>
+</head>
+<body>
+  <h1>JavaScript 소개</h1>
+  <h2>HTML의 콘텐츠 변경</h2>
+  <p>.getElementID로 특정 id를 가지는 요소를 찾고 콘텐츠를 변경할 수 있다.</p>
+  <pre>
+    document.getElementById("demo").innerHTML = "Hello world!";"
+  </pre>
+  <p>큰따옴표, 작은따옴표 모두 사용 가능하다.</p>
+  <p>HTML의 요소, CSS도 변경 가능하다.</p>
+  <pre>
+    document.getElementById("demo").style.color = "#1A2F4B";
+    document.getElementById("demo").style.fontSize = "24px";
+    document.getElementById("demo").style.textAlign = "center";
+    document.getElementById("demo").style.border = "1px solid #28475C";
+    document.getElementById("demo").style.padding = "10px";
+    document.getElementById("demo").style.margin = "20px";
+    document.getElementById("demo").style.backgroundColor = "#84C69B";
+  </pre>
+  <h2>예시 결과</h2>
+  <p id="demo"></p>
+  <style>
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      background-color: #84C69B;
+    }
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 0;
+      border-bottom: 1px solid #28475C;
+      padding-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      background-color: #84C69B;
+      
+    }
+    p:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #28475C;
+      
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #84C69B;
+      font-size: 18px;
+    }
+    p, h1, h2 {
+      color: #1A2F4B;
+      line-height: 1.5;
+      font-weight: bold;
+      text-align: center;
+      background-color: #84C69B;
+      margin: 0;
+      padding: 10px;
+    }
+    
+  </style>
+</body>
+</html>
